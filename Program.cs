@@ -16,7 +16,7 @@ var blobUrl = new Uri("");
 var pdfFile = "";
 var blobContainerClient = new BlobContainerClient(blobUrl);
 var blobClient = blobContainerClient.GetBlobClient(pdfFile);
-Console.WriteLine($"Downloading {pdfFile} from {blobUrl}/{pdfFile}...}");
+Console.WriteLine($"Downloading {pdfFile} from {blobUrl}/{pdfFile}...");
 var response = blobClient.DownloadStreaming();
 Console.WriteLine($"File downloaded successfully");
 Console.WriteLine($"Opening document in read mode...");
