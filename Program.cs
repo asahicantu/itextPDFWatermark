@@ -30,7 +30,7 @@ for (var i = 1; i <= noOfPages; i++)
 {
     WaterMarkRestricted(pdfDoc, i, font);
 }
-Console.WriteLine($"Saving file into {pdfFile}....");
+Console.WriteLine($"Saving file into {outPdf}....");
 pdfDoc.Close();
 Console.WriteLine($"Process finished");
 
